@@ -49,7 +49,7 @@ public class DeckOfCards {
 		if (currentCard < deck.length)
 			return deck[currentCard++]; // return current Card in array
 		else
-			return null; // return null to indicate that all Cards were dealt
+			throw new IllegalArgumentException("No card can be dealt, please restart the game!"); // return null to indicate that all Cards were dealt
 	}
 
 	public void reset() {

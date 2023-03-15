@@ -1,7 +1,5 @@
 package org.example;
 
-import org.example.Card;
-import org.example.DeckOfCards;
 
 public class PokerGame {
 	private DeckOfCards myDeckOfCards;
@@ -15,6 +13,7 @@ public class PokerGame {
 	public PokerGame(PokerGame game) {
 		// TODO
 		myDeckOfCards = game.myDeckOfCards;
+		game.myDeckOfCards.reset();
 	}
 
 	public DeckOfCards getMyDeckOfCards() {
